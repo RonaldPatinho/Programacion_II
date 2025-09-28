@@ -1,0 +1,10 @@
+5
+gato
+ganso
+casa
+caja
+comida
+3
+ga
+ca
+c

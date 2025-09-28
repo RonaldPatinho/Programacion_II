@@ -1,0 +1,22 @@
+<!-- bub html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>🔴 Rompe Burbujas</title>
+    <style>
+        body { margin: 0; padding: 20px; background: #222; font-family: Arial; text-align: center; }
+        .game { background: #333; padding: 20px; border-radius: 10px; display: inline-block; }
+        .score { color: white; font-size: 18px; margin-bottom: 10px; }
+        button { background: #6c5ce7; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; margin-bottom: 10px; }
+        canvas { background: #111; border-radius: 5px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <div class="game">
+        <div class="score" id="score">Puntaje: 0</div>
+        <button onclick="game.reset()">🔄 Nuevo</button><br>
+        <canvas id="canvas" width="400" height="400"></canvas>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>

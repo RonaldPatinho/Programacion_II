@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- E2 Transporte Index -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisis de Red de Transporte</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="title">ANÁLISIS DE RED DE TRANSPORTE URBANO</div>
+    <div class="container">
+        <div class="button-container">
+            <button id="mostrar-red">1. Mostrar Red</button>
+            <button id="calcular-ruta">2. Calcular Ruta Óptima</button>
+            <button id="salir">3. Salir</button>
+        </div>
+        <div id="salida"></div>
+        <div class="file-input-section">
+            <label for="file-input" class="custom-file-upload">Archivo</label>
+            <span id="file-name" class="file-name">Sin archivos seleccionados</span>
+            <input type="file" id="file-input" accept=".txt">
+        </div>
+        <button id="descargar-btn" class="download-button">Descargar</button>
+    </div>
+
+    <div id="modal-ruta" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Calcular Ruta Óptima</h2>
+            <div class="form-group">
+                <label for="origen">Estación de Origen:</label>
+                <input type="number" id="origen">
+            </div>
+            <div class="form-group">
+                <label for="destino">Estación de Destino:</label>
+                <input type="number" id="destino">
+            </div>
+            <button id="calcular-btn">Calcular</button>
+        </div>
+    </div>
+    <script src="grafo.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

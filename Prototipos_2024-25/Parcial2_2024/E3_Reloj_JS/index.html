@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cruces de Manecillas del Reloj</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: 'Calibri', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333333;
+            margin: 20px 0;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            font-family: 'Calibri', sans-serif;
+            font-weight: bold;
+            border: none;
+            padding: 10px 16px;
+            font-size: 14px;
+            cursor: pointer;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="title">PRÁCTICA</div>
+    <button onclick="cargarArchivo()">Cargar Archivo</button>
+    <table id="resultTable">
+        <thead>
+            <tr>
+                <th>Tiempo Inicial</th>
+                <th>Tiempo Final</th>
+                <th>Pasadas</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Los resultados se insertarán aquí -->
+        </tbody>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>

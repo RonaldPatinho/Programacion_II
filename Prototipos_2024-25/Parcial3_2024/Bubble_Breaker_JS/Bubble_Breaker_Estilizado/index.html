@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔴 Rompe Burbujas</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #1e1e2e, #2d3748);
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .game-container {
+            background: #1e1e2e;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .score {
+            color: #f8f8f2;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .new-game-btn {
+            background: #6c5ce7;
+            color: white;
+            border: none;
+            padding: 8px 20px;
+            border-radius: 8px;
+            font-size: 12px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .new-game-btn:hover {
+            background: #5a4fcf;
+            transform: scale(1.05);
+        }
+        .canvas-container {
+            background: #44475a;
+            padding: 5px;
+            border-radius: 10px;
+            border: 2px solid #44475a;
+        }
+        #gameCanvas {
+            background: #282a36;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="game-container">
+        <div class="header">
+            <div class="score" id="score">Puntaje: 0</div>
+            <button class="new-game-btn" onclick="game.nuevoJuego()">🔄 Nuevo Juego</button>
+        </div>
+        <div class="canvas-container">
+            <canvas id="gameCanvas" width="500" height="500"></canvas>
+        </div>
+    </div>
+    
+    <script src="bubble-game.js"></script>
+</body>
+</html>
